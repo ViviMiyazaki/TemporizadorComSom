@@ -20,14 +20,21 @@ body {
   color: var(--text-color);
 
   font-family: 'roboto';
+  font-weight: bold;
 
   display: grid;
+  min-height: 100vh;
+}
+
+main {
+  align-self: end;
+  justify-self: center;
 }
 
 button {
   background-color: transparent;
   border: none;
-
+  
   cursor: pointer;
 }
 
@@ -41,9 +48,10 @@ button svg {
 
 #timer {
   font-size: clamp(4rem, 4rem + 10vw, 8.8rem);
-
+  
   display: flex;
-
+  margin-bottom: 1.6rem;
+  
 }
 
 #controls {
@@ -52,9 +60,16 @@ button svg {
   align-items: center;
   justify-content: center;
   gap: 3.2rem;
-
+  
   border-radius: 9999px;
-
+  
   width: clamp(10rem, 10rem + 30vw, 22.8rem);
   height: clamp(8rem, 5rem + 10vw, 10.8rem);
+}
+
+footer {
+  align-self: end;
+  justify-self: end;
+
+  padding: 0 4rem 3.2rem 0;
 }
